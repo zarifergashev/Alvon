@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/al_main_activity_app_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/white"
+            app:title="@string/title_edit_images"
+            android:background="@color/colorAccent"
+            android:id="@+id/tb_main_activity_toolbar"
+            android:layout_height="?android:actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.fragment.main_fragment.MainFragment">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/fl_background_container"
+                android:background="@drawable/arc_shape_left"
+                android:layout_height="330dp" />
+
+            <!-- <ImageView
+                 android:id="@+id/iv_camera"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:tint="@color/white"
+                 app:layout_constraintBottom_toBottomOf="@id/fl_background_container"
+                 app:layout_constraintEnd_toStartOf="@+id/ic_picture"
+                 app:layout_constraintStart_toStartOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+ -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/iv_camera"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@id/fl_background_container"
+                app:layout_constraintEnd_toStartOf="@+id/ic_picture"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawRes="@raw/camera"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ic_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toEndOf="@id/iv_camera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/fl_background_container"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawRes="@raw/choose_photo"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true" />
+
+            <!--<ImageView
+                app:layout_constraintBottom_toBottomOf="@id/fl_background_container"
+                android:id="@+id/ic_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/white"
+                app:layout_constraintStart_toEndOf="@id/iv_camera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_image_black_24dp" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</LinearLayout>

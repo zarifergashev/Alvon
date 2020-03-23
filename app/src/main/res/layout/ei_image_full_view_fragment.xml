@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ja.burhanrashid52.photoeditor.TouchImageView android:layout_width="match_parent"
+                                                  android:id="@+id/ei_image_full_view_iv_main"
+                                                  android:layout_alignParentStart="true"
+                                                  android:layout_alignParentTop="true"
+                                                  android:layout_alignParentBottom="true"
+                                                  android:layout_alignParentEnd="true"
+                                                  android:layout_height="match_parent"
+                                                  android:layout_alignParentLeft="true"
+                                                  android:layout_alignParentRight="true"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:layout_alignParentBottom="true"
+            android:paddingEnd="16dp"
+            android:background="#00FFFFFF"
+            android:id="@+id/ei_image_full_view_toolbar_container"
+            android:layout_height="?android:attr/actionBarSize"
+            android:paddingLeft="12dp">
+        <ImageView android:layout_width="wrap_content"
+                   android:paddingEnd="8dp"
+                   android:paddingStart="8dp"
+                   android:layout_gravity="center_vertical"
+                   android:id="@+id/ei_image_full_view_btn_back"
+                   app:srcCompat="@drawable/ic_arrow_left"
+                   android:layout_height="match_parent"/>
+        <!--     <ImageView android:layout_width="wrap_content"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        app:srcCompat="@drawable/ic_done_app"
+                        android:layout_gravity="end"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ei_iv_save"/>-->
+    </FrameLayout>
+</RelativeLayout>

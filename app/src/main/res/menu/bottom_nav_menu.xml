@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/main_fragment"
+            android:icon="@drawable/ic_edit_image"
+            android:title="@string/title_edit_images"/>
+
+    <item
+            android:id="@+id/my_picture_fragment"
+            android:icon="@drawable/ic_images"
+            android:title="@string/title_images"/>
+
+    <item
+            android:id="@+id/about_fragment"
+            android:icon="@drawable/ic_instruction"
+            android:title="@string/title_about"/>
+
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                              app:srcCompat="@drawable/img_wear"
+                                              android:id="@+id/ei_images_bottom_shett_dialog_row_iv"
+                                              android:orientation="vertical"
+                                              android:layout_width="wrap_content"
+                                              android:layout_height="250dp">
+
+</androidx.appcompat.widget.AppCompatImageView>

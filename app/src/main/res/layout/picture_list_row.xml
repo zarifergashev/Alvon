@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_height="250dp" android:layout_width="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                       android:layout_margin="4dp"
+                                       app:cardCornerRadius="4dp"
+                                       android:layout_height="match_parent">
+        <FrameLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView android:layout_width="match_parent"
+                       android:id="@+id/iv_self_picture"
+                       android:scaleType="centerCrop"
+                       android:layout_height="match_parent"/>
+            <TextView android:layout_width="wrap_content"
+                      android:background="@drawable/image_size_bg"
+                      android:id="@+id/tv_image_size"
+                      android:padding="8dp"
+                      android:textSize="16sp"
+                      android:textColor="@color/white"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="top|end"
+            />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

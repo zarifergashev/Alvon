@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+             android:layout_width="wrap_content">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="80dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/ei_edit_type_row_container"
+            android:gravity="center"
+            android:background="@drawable/ei_bg_6"
+            android:layout_height="80dp" android:layout_marginRight="5dp">
+        <ImageView android:layout_width="40dp"
+                   android:src="@drawable/icon_suits_party"
+                   android:layout_height="40dp"
+                   android:layout_marginTop="8dp"
+                   android:layout_marginLeft="8dp"
+                   android:layout_marginStart="8dp"
+                   android:layout_marginEnd="8dp"
+                   android:layout_marginRight="8dp"
+                   android:id="@+id/ei_edit_type_row_iv_type"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="@string/Save"
+                  android:textColor="@color/white"
+                  android:layout_height="wrap_content"
+                  android:textSize="10sp"
+                  android:id="@+id/ei_edit_type_row_tv_save"
+                  android:layout_marginBottom="8dp"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginEnd="8dp"
+                  android:layout_marginRight="8dp"
+        />
+    </LinearLayout>
+</FrameLayout>

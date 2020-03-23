@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Macho Man Pro</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="place_wait">Place Wait...</string>
+
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+    <string name="permission_pick_rationale">READ_EXTERNAL_STORAGE permission is needed to pick image.</string>
+    <string name="permission_crop_rationale">WRITE_EXTERNAL_STORAGE permission is needed to save cropped image.</string>
+    <string name="permission_denied">Permission was denied. Please consider granting it in order to use all features.
+    </string>
+    <string name="permission_denied_never_ask_again">Permission was denied with never ask again.</string>
+    <string name="not_image">Image not</string>
+    <string name="Save">Save</string>
+    <string name="body">Body</string>
+    <string name="wear">Wear</string>
+    <string name="blur">Blur</string>
+    <string name="macho">MA</string>
+    <string name="accessories">Accessories</string>
+    <string name="beauty">Beauty</string>
+    <string name="share">Share</string>
+    <string name="image_not_found">Image no found</string>
+    <string name="packs">Pacs</string>
+    <string name="chest">Chest</string>
+    <string name="arms">Arms</string>
+    <string name="hair">Hair</string>
+    <string name="beard">Beard</string>
+    <string name="mustache">Mustache</string>
+    <string name="eyebrows">Eyebrows</string>
+    <string name="eye">Eye</string>
+    <string name="party">Party</string>
+    <string name="wedding">Wedding</string>
+    <string name="tarditional">Tarditional</string>
+    <string name="western">Western</string>
+    <string name="tattoo">Tattoo</string>
+    <string name="glass">Glass</string>
+    <string name="tie">Tie</string>
+    <string name="cap">Cap</string>
+    <string name="scarf">Scarf</string>
+    <string name="error">App Error</string>
+    <string name="select_picture_is_empty">Your selected image is null object reference</string>
+    <string name="your_select_item_is_null">Your selected image is select but this id is null</string>
+    <string name="warning">Warning</string>
+    <string name="are_you_sure_want_to_exit">Are you sure want to exit?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="filters">Filters</string>
+    <string name="title_images">Images</string>
+    <string name="title_edit_images">Edit Image</string>
+    <string name="title_about">About</string>
+    <string name="you_need_all_permission">You need all permission</string>
+    <string name="you_have_to_grant_permission">You have to grant permission</string>
+    <string name="rate_use">Rate Us</string>
+    <string name="more_apps">More apps</string>
+    <string name="private_politic">Private Policy</string>
+    <string name="image_edit">Image Edit</string>
+    <string name="other">Other</string>
+    <string name="tiwitter">Tiwitter</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+
+    <string name="activity_title_main">Filters</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit">Edit</string>
+
+    <string name="lbl_brightness">Brightness</string>
+    <string name="lbl_contrast">Contrast</string>
+    <string name="lbl_saturation">Saturation</string>
+    <string name="tab_filters">Filters</string>
+    <string name="tab_edit">Edit</string>
+
+
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="filter_normal">Normal</string>
+    <string name="action_save">Save</string>
+    <string name="action_open">Open</string>
+    <string name="ok">Ok</string>
+</resources>

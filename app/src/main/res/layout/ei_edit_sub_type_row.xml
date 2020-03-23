@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content"
+             android:minWidth="90dp"
+
+             android:layout_width="wrap_content">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:id="@+id/ei_edit_type_row_container"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <ImageView android:layout_width="40dp"
+                   android:src="@drawable/icon_suits_party"
+                   android:layout_height="40dp"
+                   android:id="@+id/ei_edit_type_row_iv_type"/>
+        <TextView android:layout_width="wrap_content"
+                  android:textSize="10sp"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ei_edit_type_row_tv_save"
+                  android:lines="1"
+        />
+    </LinearLayout>
+</FrameLayout>

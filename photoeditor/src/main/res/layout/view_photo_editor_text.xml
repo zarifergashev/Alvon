@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:id="@+id/frameLayout"
+                                                   android:layout_gravity="center"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:id="@+id/frmBorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border_tv"
+            app:layout_constraintBottom_toTopOf="@id/btnPencil"
+            app:layout_constraintEnd_toStartOf="@+id/imgPhotoEditorClose"
+            app:layout_constraintStart_toEndOf="@+id/btnPencil"
+            app:layout_constraintTop_toBottomOf="@id/imgPhotoEditorClose">
+
+        <TextView
+                android:id="@+id/tvPhotoEditorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textColor="#000000"
+                android:padding="4dp"
+                android:textSize="24sp"
+                tools:text="Javokhir"/>
+
+    </FrameLayout>
+
+    <ImageView
+            android:id="@+id/imgPhotoEditorClose"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/round_shape"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cancel"/>
+
+    <ImageView
+            android:id="@+id/btnPencil"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/round_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_pencil"/>
+
+    <ImageButton
+            android:id="@+id/btnResize"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:background="@drawable/round_shape"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_expand"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

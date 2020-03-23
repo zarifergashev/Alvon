@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+<LinearLayout
+        android:layout_width="0dp"
+        android:background="@drawable/arc_shape_bottom"
+        android:padding="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/ll_top_container"
+        app:layout_constraintHeight_percent="0.45"
+        android:layout_height="0dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/shf_iv_main"
+
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:padding="16dp"
+                  android:id="@+id/shf_tv_save"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/shf_iv_main"
+                  android:gravity="center_horizontal"
+                  android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content"
+                                                      app:srcCompat="@drawable/ic_done_app"
+                                                      android:tint="@color/white"
+                                                      android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:text="Saved successfully"
+                                                     android:textColor="@color/white"
+                                                     android:textSize="16sp"
+                                                     android:layout_gravity="center_vertical"
+                                                     android:paddingStart="10dp"
+                                                     android:layout_height="wrap_content" android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:orientation="vertical"
+                  app:layout_constraintHeight_percent="0.15"
+                  android:background="@drawable/btn_share_bg"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/ll_top_container"
+                  app:layout_constraintEnd_toStartOf="@id/shf_share_face"
+                  android:id="@+id/shf_share_inta"
+                  android:layout_height="0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent"
+                                                      android:src="@drawable/img_facebook"
+                                                      android:layout_height="0dp"
+                                                      android:layout_weight="1"
+                                                      android:padding="8dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:text="@string/facebook"
+                                                     android:layout_gravity="center_horizontal"
+                                                     android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp"
+                  android:orientation="vertical"
+                  android:id="@+id/shf_share_face"
+                  app:layout_constraintEnd_toStartOf="@id/shf_share_tvet"
+                  android:background="@drawable/btn_share_bg"
+                  app:layout_constraintStart_toEndOf="@id/shf_share_inta"
+                  app:layout_constraintTop_toTopOf="@id/shf_share_inta"
+                  app:layout_constraintBottom_toBottomOf="@id/shf_share_inta"
+                  android:layout_height="0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent"
+                                                      android:src="@drawable/img_intagram"
+                                                      android:layout_height="0dp"
+                                                      android:padding="8dp"
+                                                      android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:text="@string/instagram"
+                                                     android:layout_gravity="center_horizontal"
+                                                     android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/btn_share_bg"
+                  android:id="@+id/shf_share_tvet"
+                  app:layout_constraintEnd_toStartOf="@id/shf_share_other"
+                  app:layout_constraintStart_toEndOf="@id/shf_share_face"
+                  app:layout_constraintTop_toTopOf="@id/shf_share_face"
+                  app:layout_constraintBottom_toBottomOf="@id/shf_share_face"
+                  android:layout_height="0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent"
+                                                      android:src="@drawable/img_twitter"
+                                                      android:layout_weight="1"
+                                                      android:padding="8dp"
+                                                      android:layout_height="0dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:text="@string/tiwitter"
+                                                     android:gravity="center_horizontal"
+                                                     android:layout_gravity="center_horizontal"
+                                                     android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp"
+                  android:orientation="vertical"
+                  android:id="@+id/shf_share_other"
+                  android:background="@drawable/btn_share_bg"
+                  app:layout_constraintStart_toEndOf="@id/shf_share_tvet"
+                  app:layout_constraintTop_toTopOf="@id/shf_share_tvet"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintBottom_toBottomOf="@id/shf_share_tvet"
+                  android:layout_height="0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="match_parent"
+                                                      app:srcCompat="@drawable/ic_three_dots_icon"
+                                                      android:layout_weight="1"
+                                                      android:padding="8dp"
+                                                      android:layout_height="0dp"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="match_parent"
+                                                     android:text="@string/other"
+                                                     android:gravity="center_horizontal"
+                                                     android:layout_gravity="center_horizontal"
+                                                     android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

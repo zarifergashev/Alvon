@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/Android.mk",
+    "/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/zarifergashev/Documents/android-ndk-r20/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/zarifergashev/Documents/alvon/imagefilters/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/zarifergashev/Documents/alvon/imagefilters/build/intermediates/ndkBuild/release/lib clean"
+  ],
+  "libraries": {
+    "NativeImageProcessor-release-x86": {
+      "buildCommand": "/Users/zarifergashev/Documents/android-ndk-r20/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-16 NDK_OUT\u003d/Users/zarifergashev/Documents/alvon/imagefilters/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/zarifergashev/Documents/alvon/imagefilters/build/intermediates/ndkBuild/release/lib /Users/zarifergashev/Documents/alvon/imagefilters/build/intermediates/ndkBuild/release/obj/local/x86/libNativeImageProcessor.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "NativeImageProcessor",
+      "files": [
+        {
+          "src": "/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni/NativeImageProcessor.cpp",
+          "flags": "-target i686-none-linux-android16 -fdata-sections -ffunction-sections -fstack-protector-strong -funwind-tables -no-canonical-prefixes --sysroot /Users/zarifergashev/Documents/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -fno-addrsig -fno-exceptions -fno-rtti -fPIC -O2 -DNDEBUG -I/Users/zarifergashev/Documents/android-ndk-r20/sources/cxx-stl/llvm-libc++/include -I/Users/zarifergashev/Documents/android-ndk-r20/sources/cxx-stl/llvm-libc++abi/include -I/Users/zarifergashev/Documents/alvon/imagefilters/src/main/jni -std\u003dc++11 -frtti -fexceptions -DANDROID -DANDROID -nostdinc++ -Wa,--noexecstack -Wformat -Werror\u003dformat-security -mstackrealign"
+        }
+      ],
+      "output": "/Users/zarifergashev/Documents/alvon/imagefilters/build/intermediates/ndkBuild/release/obj/local/x86/libNativeImageProcessor.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cppCompilerExecutable": "/Users/zarifergashev/Documents/android-ndk-r20/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

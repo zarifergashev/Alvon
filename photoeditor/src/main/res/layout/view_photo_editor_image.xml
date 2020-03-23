@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/imgPhotoEditorFlip"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|start"
+            android:elevation="1dp"
+            android:padding="4dp"
+            android:background="@drawable/round_shape"
+            app:srcCompat="@drawable/ic_sticker_flip" />
+    <ImageView
+        android:id="@+id/imgPhotoEditorClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|end"
+        android:elevation="1dp"
+        android:padding="4dp"
+        android:background="@drawable/round_shape"
+        app:srcCompat="@drawable/ic_sticker_delete" />
+    <ImageView
+            android:id="@+id/imgPhotoEditorBrush"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|start"
+            android:elevation="1dp"
+            android:padding="4dp"
+            android:background="@drawable/round_shape"
+            app:srcCompat="@drawable/ic_brush_selver_24dp" />
+    <ImageView
+            android:id="@+id/imgPhotoEditorEraser"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:elevation="1dp"
+            android:padding="4dp"
+            android:background="@drawable/round_shape"
+            app:srcCompat="@drawable/icon_erase" />
+
+    <FrameLayout
+        android:id="@+id/frmBorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_border_tv">
+
+        <ImageView
+            android:id="@+id/imgPhotoEditorImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_cancel" />
+
+    </FrameLayout>
+
+</FrameLayout>
